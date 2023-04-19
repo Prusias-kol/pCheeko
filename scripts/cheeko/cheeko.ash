@@ -29,7 +29,7 @@ void cheeko(int x) {
     equip($slot[acc1], $item[teacher's pen]);
     equip($slot[acc2], $item[teacher's pen]);
     equip($slot[acc3], $item[mafia thumb ring]);
-    maximize("+combat,0.1 item,-equip broken champagne bottle,1000 bonus tiny stillsuit, 900 bonus grey down vest, -acc1, -acc2, -acc3", false);
+    maximize("100 familiar experience 9 min 9 max, item 213 max, 0.001 meat, 2 combat, 80 bonus carnivorous potted plant, 100 bonus mafia thumb ring, 110 bonus lucky gold ring, 60 bonus cheeng's spectacles,1000 bonus tiny stillsuit, -tie, -equip kramco, -equip I voted, -equip broken champagne bottle", false);
     cli_execute("acquire 1 tryptophan dart");
     cli_execute("acquire 1 ice house");
     cli_execute("acquire 1 human musk");
