@@ -5,11 +5,6 @@ To install, run
 ```
 git checkout https://github.com/Prusias-kol/pCheeko main
 ```
-make a CCS macro called `cheeko` with the following inside
-```
-[ default ]
-consult cheekocombat.ash
-```
 
 ## How to Use
 To use the script,  type 
