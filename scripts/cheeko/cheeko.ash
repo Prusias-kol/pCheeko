@@ -18,6 +18,8 @@ void cheeko(int x) {
         x = size;
     }
     print("Preparing CHEEKO", "blue");
+    chat_private("Flesh Puppet", "Curiosity of Br " + x);
+    set_auto_attack(0);
     string prevCombat = get_property('customCombatScript');
     buffer ccs;
     ccs.append("[default]");
@@ -29,7 +31,7 @@ void cheeko(int x) {
     equip($slot[acc1], $item[teacher's pen]);
     equip($slot[acc2], $item[teacher's pen]);
     equip($slot[acc3], $item[mafia thumb ring]);
-    maximize("100 familiar experience 9 min 9 max, item 213 max, 0.001 meat, 2 combat, 80 bonus carnivorous potted plant, 100 bonus mafia thumb ring, 110 bonus lucky gold ring, 60 bonus cheeng's spectacles,1000 bonus tiny stillsuit, -tie, -equip kramco, -equip I voted, -equip broken champagne bottle", false);
+    maximize("100 familiar experience 10 min 10 max, item 313 max, 0.001 meat, combat 20 max, 80 bonus carnivorous potted plant, 100 bonus mafia thumb ring, 110 bonus lucky gold ring, 60 bonus cheeng's spectacles,1000 bonus tiny stillsuit, -tie, -equip kramco, -equip I voted, -equip broken champagne bottle", false);
     cli_execute("acquire 1 tryptophan dart");
     cli_execute("acquire 1 ice house");
     cli_execute("acquire 1 human musk");
