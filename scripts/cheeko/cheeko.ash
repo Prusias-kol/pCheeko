@@ -23,15 +23,18 @@ void cheeko(int x) {
     use_familiar($familiar[Grey Goose]);
     equip($slot[acc1], $item[teacher's pen]);
     equip($slot[acc2], $item[teacher's pen]);
-    maximize("+combat,0.1 item,-equip broken champagne bottle,1000 bonus tiny stillsuit, 900 bonus grey down vest, -acc1, -acc2", false);
+    equip($slot[acc3], $item[mafia thumb ring]);
+    maximize("+combat,0.1 item,-equip broken champagne bottle,1000 bonus tiny stillsuit, 900 bonus grey down vest, -acc1, -acc2, -acc3", false);
     cli_execute("acquire 1 tryptophan dart");
     cli_execute("acquire 1 ice house");
     cli_execute("acquire 1 human musk");
+    int cheekoamount = item_amount($item[bum cheek]);
     print("starting CHEEKO", "blue");
     for (int i = 0; i < x; i++) {
         adv1($location[The Sleazy Back Alley],-1,"");
     }
     set_property('customCombatScript',prevCombat);
+    print("Gained " + (item_amount($item[bum cheek]) - cheekoamount) + " bum cheeks.", "blue");
 
 }
 
